@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Pasha - International Foods Store</title>
+    <title>Al Pasha</title>
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <!-- Google Translate Initialization -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'fi',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
     
 </head>
 <body>
@@ -56,19 +68,20 @@
             </div>
             <div class="categories-grid">
                 <div class="category-card">
-                    <div class="product-image" style="background-image: url('/pictures/arab.jpg');"></div>
-                    <div class="category-content">
-                        <h3>Arab Cuisine</h3>
-                        <p>Spices, dates, olive oil, halal meats, and traditional sweets</p>
-                    </div>
-                </div>
-                <div class="category-card">
                     <div class="product-image" style="background-image: url('/pictures/asia.jpg');"></div>
                     <div class="category-content">
                         <h3>Asian Foods</h3>
                         <p>Noodles, sauces, rice varieties, and exotic ingredients</p>
                     </div>
                 </div>
+                <div class="category-card">
+                    <div class="product-image" style="background-image: url('/pictures/arab.jpg');"></div>
+                    <div class="category-content">
+                        <h3>Arab Cuisine</h3>
+                        <p>Spices, dates, olive oil, halal meats, and traditional sweets</p>
+                    </div>
+                </div>
+            
                 <div class="category-card">
                     <div class="product-image" style="background-image: url('/pictures/india.jpg');"></div>
                     <div class="category-content">
@@ -168,15 +181,18 @@
 
             </div>
             <div class="map">
-                <div class="map-placeholder">
-                    <p>Interactive Map</p>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=60.6331947,24.863298" 
-                    class="btn" 
-                    target="_blank">
-                    Open in Google Maps
-                    </a>
-                </div>
+            <div class="map-placeholder">
+                <iframe 
+                    src="https://www.google.com/maps?q=60.6331947,24.863298&z=15&output=embed" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
+        </div>
            
             </div>
         </div>
@@ -240,10 +256,9 @@
                 
                 <h4>Available Products</h4>
                 <ul>
-                    <li>Classic Walnut Baklava</li>
-                    <li>Pistachio Baklava</li>
-                    <li>Mixed Nut Baklava</li>
-                    <li>Kunafa (Cheese Pastry)</li>
+                    <li>Classic Pistachio Baklava</li>
+                    <li>Burma baklava</li>
+                    <li>Datli sweets</li>
                     <li>Assorted Middle Eastern Sweets</li>
                 </ul>
             </div>
@@ -264,12 +279,11 @@
                 
                 <h4>Available Products</h4>
                 <ul>
-                    <li>Halal Lamb (various cuts)</li>
+                    <li>Halal beef minced meat</li>
                     <li>Halal Beef (various cuts)</li>
-                    <li>Halal Chicken (whole and parts)</li>
-                    <li>Halal Goat Meat</li>
-                    <li>Specialty Sausages</li>
-                    <li>Marinated Meat Options</li>
+                    <li>Halal Chicken whole</li>
+                    <li>Halal Chicken parts (drums, wings etc.)</li>
+                    <li>Chicken liver</li>
                 </ul>
             </div>
         </div>
@@ -294,7 +308,9 @@
                     <li>Thai Chili</li>
                     <li>Coriander</li>
                     <li>Parsley</li>
-                    <li>Bitter Melon</li>
+                    <li>Mint</li>
+                    <li>Sweet potato</li>
+                    <li>White radish</li>
                     <li>Plantains</li>
                     <li>Cassava</li>
                     <li>Yam</li>
